@@ -147,7 +147,7 @@
                             <p class="procedures-text">Очищення <br /> обличчя</p>
                         </li>
                     </ul>
-                    <button class="carousel-button" type="button">
+                    <button class="carousel-button next" type="button">
                         <svg width="16" height="16">
                             <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
@@ -164,9 +164,34 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25901.220094275035!2d30.543721382792913!3d50.456932864907245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ucraina%2C%2002000!5e0!3m2!1sit!2sit!4v1699519534083!5m2!1sit!2sit"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <h3>Запишіться безкоштовно та отримайте подарунок</h3>
-                </div>
+                    <div class="contact-form">
+                        <p class="contacts-text">Запишіться <span class="accent">безкоштовно</span> <br> та отримайте
+                            подарунок</p>
+                        <form name="modal-form" autocomplete="off">
+                            <div class="form-field">
+                                <input class="form-input" type="text" id="user-name" name="user-name"
+                                    placeholder="Ваше ім'я та призвище">
+                                <label class="form-lable visualy-hidden" for="user-name">ім'я та призвище</label>
+                            </div>
 
+                            <div class="form-field">
+                                <input class="form-input" type="tel" id="user-tel" class="user-tel"
+                                    placeholder="Ваш номер телефону">
+                                <label class="form-lable visualy-hidden" for="user-tel">телефон</label>
+                            </div>
+                            <div class="form-field">
+                                <input class="form-input" type="email" id="user-email" class="user-email"
+                                    placeholder="Ваша електронна пошта">
+                                <label class="form-lable visualy-hidden" for="user-email">електронна пошта</label>
+                            </div>
+
+                            <button type="submit" class="form-button button-primary">Записатись безкоштовно</button>
+                            <p class="form-terms">Premendo il tasto acetto la <a class="form-terms-link"
+                                    href="#">Privacy Policy</a></p>
+                        </form>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
@@ -217,9 +242,33 @@
 
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
+            <h2 class="modal-form-title">Замовити дзвінок</h2>
+            <p class="modal-form-text">Запишіться безкоштовно та отримайте подарунок</p>
+            <form name="modal-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                    <input class="form-input" type="text" id="user-name" name="user-name"
+                        placeholder="Ваше ім'я та призвище">
+                    <label class="form-lable visualy-hidden" for="user-name">ім'я та призвище</label>
+                </div>
+
+                <div class="form-field">
+                    <input class="form-input" type="tel" id="user-tel" class="user-tel"
+                        placeholder="Ваш номер телефону">
+                    <label class="form-lable visualy-hidden" for="user-tel">телефон</label>
+                </div>
+                <div class="form-field">
+                    <input class="form-input" type="email" id="user-email" class="user-email"
+                        placeholder="Ваша електронна пошта">
+                    <label class="form-lable visualy-hidden" for="user-email">електронна пошта</label>
+                </div>
+
+                <button type="submit" class="form-button button-primary">Записатись безкоштовно</button>
+                <p class="form-terms">Premendo il tasto acetto la <a class="form-terms-link" href="#">Privacy Policy</a>
+                </p>
+            </form>
         </div>
     </div>
     <script src="js/modal.js"></script>
