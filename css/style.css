@@ -80,7 +80,7 @@ ul {
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 ;
 }
 
 /*Button*/
@@ -93,7 +93,7 @@ button {
     border-radius: 32px;
     padding: 16px 32px;
     gap: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 button:hover {
     color: var(--color-brand-dark);
@@ -104,7 +104,7 @@ button:hover {
 .link {
     color: var(--color-primary-dark);
     text-decoration: none;
-    transition: color 0.3s ;
+    transition: color 0.2s ;
 }
 
 .link:hover {
@@ -174,12 +174,14 @@ url('../images/hero-section-background.jpg');
 /*Results section*/
 .section-container {
     display: flex;
+    justify-content: center;
 }
 .results-title {
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 64px;
     line-height: 1.16;
+    margin-bottom: 40px;
 }
 .results-title .accent{
     color: var(--color-brand-light);
@@ -187,22 +189,64 @@ url('../images/hero-section-background.jpg');
 }
 .result-text {
     font-size: 22px;
+    margin-bottom: 0;
 }
+.result-text.first {
+  margin-bottom: 40px; 
+}
+
 .result-text .accent {
 font-weight: 500;
 text-transform: capitalize;
 }
 .result-image {
+    width: 100%;
+    max-width: 335px;
+    height: 100%;
+    max-height:328px ;
     border-radius: 50%;
+    
+}
+.result-image.before {
     margin-left: 28px;
 }
+.black-star {
+    position:relative;
+    margin-top: 9px;
+    animation: spin 1.5s;
+}
+
+@keyframes spin {
+    0%{
+transform:scale(1);
+    }
+    100%{
+        transform: scale(1.8);
+    }
+}
+
+.star-image-1 {
+    position: absolute;
+    margin-left: 185px;
+    
+    
+}
+.result-image-2 {
+    position: relative;
+    margin-left: 215px;
+}
+
 /*Merits section*/
 .merits-list {
     display: flex;
     justify-content:center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-block: 0;
+    padding: 0;
+    
 }
+
 .merits-item {
     border: 1px solid black;
     border-radius: 32px;
@@ -212,6 +256,11 @@ text-transform: capitalize;
     align-items: center;
     gap: 12px;
     margin: 0 32px;
+    transition: color 0.2s;
+}
+.merits-item:hover {
+    transform: scale(1.05);
+    
 }
 .merits-card {
     display: flex;
@@ -248,11 +297,14 @@ line-height: 1.16;
     display: flex;
     align-items: center;
     gap: 32px;
+    justify-content: center;
 }
 .procedures-list {
     display: flex;
         gap: 20px;
         flex-wrap: wrap;
+        margin-block: 0;
+        padding-left: 0;
 }
 .procedures-item {
     flex-basis: calc((100% - 40px) / 3);
@@ -293,6 +345,7 @@ text-align:center;
 font-family: 'Play', sans-serif;
 font-weight: 700;
 font-size: 64px;
+margin-bottom: 48px;
 line-height: 1.16;
 }
 .procedures-title .accent{
@@ -359,6 +412,9 @@ color: var(--color-brand-light);
     max-height: 480px;
     padding:48px 56px ;
 
+}
+.form-field.contacts {
+    margin-bottom: 16px;
 }
 /*Footer*/
 .footer {
@@ -466,8 +522,9 @@ background-position: center;
 }
 /*Form*/
 .form-field {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
+
 .form-input {
     padding: 16px 42px;
     width: 100%;
@@ -501,7 +558,7 @@ background-position: center;
 
 .form-button {
     display: block;
-    margin: 0 auto 24px;
+    margin: 0 auto 8px;
 }
 
 .form-terms {

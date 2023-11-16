@@ -60,7 +60,7 @@
                 <div class="section-container">
                     <div class="results-container">
                         <h2 class="results-title">Перевтілюйтесь <br /> в <span class="accent">beauty zone!</span></h2>
-                        <p class="result-text">Наша косметологічна клініка пропонує вам професійні послуги <br />
+                        <p class="result-text first">Наша косметологічна клініка пропонує вам професійні послуги <br />
                             з догляду за шкірою обличчя та тіла.</p>
                         <p class="result-text">B <span class="accent">beauty zone</span> ми гарантуємо найвищі стандарти
                             якості <br /> та
@@ -71,8 +71,19 @@
 
 
                     <div class="results-images">
-                        <img class="result-image" src="images/before.jpg" alt="lady's face before treatment">
-                        <img class="result-image" src="images/after.jpg" alt="lady's face after treatment">
+
+                        <div class="result-image-1">
+                            <img class="result-image before" src="images/before.jpg" alt="lady's face before treatment">
+                        </div>
+
+                        <div class="black-star">
+                            <img class="star-image-1" src="images/Star-1.png" alt="">
+                        </div>
+
+                        <div class="result-image-2">
+                            <img class="result-image after" src="images/after.jpg" alt="lady's face after treatment">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -168,20 +179,21 @@
                         <p class="contacts-text">Запишіться <span class="accent">безкоштовно</span> <br> та отримайте
                             подарунок</p>
                         <form name="modal-form" autocomplete="off">
-                            <div class="form-field">
-                                <input class="form-input" type="text" id="user-name" name="user-name"
-                                    placeholder="Ваше ім'я та призвище">
-                                <label class="form-lable visualy-hidden" for="user-name">ім'я та призвище</label>
+                            <div class="form-field contacts">
+                                <input class="form-input" type="text" id="fullName" name="fullName"
+                                    placeholder="Ваше ім'я та призвище" pattern="^\w+\s\w+$"
+                                    title="Inserisci almeno due parole separate da uno spazio" required>
+                                <label class="form-lable visualy-hidden" for="fullName">ім'я та призвище</label>
                             </div>
 
-                            <div class="form-field">
-                                <input class="form-input" type="tel" id="user-tel" class="user-tel"
-                                    placeholder="Ваш номер телефону">
-                                <label class="form-lable visualy-hidden" for="user-tel">телефон</label>
+                            <div class="form-field contacts">
+                                <input class="form-input" type="tel" id="phoneNumber" name="phoneNumber"
+                                    placeholder="Ваш номер телефону" pattern="^\+[0-9]{12}$" required>
+                                <label class="form-lable visualy-hidden" for="phoneNumber">телефон</label>
                             </div>
-                            <div class="form-field">
+                            <div class="form-field contacts">
                                 <input class="form-input" type="email" id="user-email" class="user-email"
-                                    placeholder="Ваша електронна пошта">
+                                    placeholder="Ваша електронна пошта" required>
                                 <label class="form-lable visualy-hidden" for="user-email">електронна пошта</label>
                             </div>
 
@@ -205,10 +217,10 @@
                         </a>
                     </div>
                     <ul class="footer-menu">
-                        <li><a class="foter-link" href="#">Про нас</a></li>
-                        <li><a class="foter-link" href="#">Чому ми</a></li>
-                        <li><a class="foter-link" href="#">Наші процудури</a></li>
-                        <li><a class="foter-link" href="#">Контакти</a></li>
+                        <li><a class=" link foter-link" href="#">Про нас</a></li>
+                        <li><a class="link foter-link" href="#">Чому ми</a></li>
+                        <li><a class="link foter-link" href="#">Наші процудури</a></li>
+                        <li><a class="link foter-link" href="#">Контакти</a></li>
                     </ul>
                 </nav>
                 <address class="footer-address">
@@ -247,21 +259,22 @@
             <button class="modal-btn-close" type="button">Close</button>
             <h2 class="modal-form-title">Замовити дзвінок</h2>
             <p class="modal-form-text">Запишіться безкоштовно та отримайте подарунок</p>
-            <form name="modal-form" autocomplete="off" novalidate>
+            <form name="modal-form" autocomplete="off">
                 <div class="form-field">
-                    <input class="form-input" type="text" id="user-name" name="user-name"
-                        placeholder="Ваше ім'я та призвище">
-                    <label class="form-lable visualy-hidden" for="user-name">ім'я та призвище</label>
+                    <input class="form-input" type="text" id="fullName" name="fullName"
+                        placeholder="Ваше ім'я та призвище" pattern="^\w+\s\w+$"
+                        title="Inserisci almeno due parole separate da uno spazio" required>
+                    <label class="form-lable visualy-hidden" for="fullName">ім'я та призвище</label>
                 </div>
 
                 <div class="form-field">
-                    <input class="form-input" type="tel" id="user-tel" class="user-tel"
-                        placeholder="Ваш номер телефону">
-                    <label class="form-lable visualy-hidden" for="user-tel">телефон</label>
+                    <input class="form-input" type="tel" id="phoneNumber" name="phoneNumber"
+                        placeholder="Ваш номер телефону" pattern="^\+[0-9]{12}$" required>
+                    <label class="form-lable visualy-hidden" for="phoneNumber">телефон</label>
                 </div>
                 <div class="form-field">
                     <input class="form-input" type="email" id="user-email" class="user-email"
-                        placeholder="Ваша електронна пошта">
+                        placeholder="Ваша електронна пошта" required>
                     <label class="form-lable visualy-hidden" for="user-email">електронна пошта</label>
                 </div>
 
