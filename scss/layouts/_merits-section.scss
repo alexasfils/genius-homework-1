@@ -1,0 +1,61 @@
+.merits-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-block: 0;
+    padding: 0;
+
+}
+
+.merits-item {
+    border: 1px solid black;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 0 32px;
+    transition: color 0.2s;
+}
+
+.merits-item:hover {
+    transform: scale(1.05);
+
+}
+
+.merits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px;
+}
+
+.merits-text {
+    margin: 0;
+
+}
+
+.merits-icon {
+    margin-bottom: 8px;
+    fill: var(--color-brand-light);
+
+}
+
+.merits-title {
+    margin-bottom: 20px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.16;
+}
+
+.section-title.centered {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.merits-title .accent {
+    color: var(--color-brand-light);
+}

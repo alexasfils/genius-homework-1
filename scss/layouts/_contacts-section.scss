@@ -1,0 +1,49 @@
+.contacts-title {
+    /*display:flex;
+    justify-content: center;*/
+    margin: 0 0 48px 420px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.16;
+}
+
+.contacts-title .accent,
+.contacts-text .accent {
+    color: var(--color-brand-light);
+}
+
+.contacts-text {
+    color: var(--color-primary-light);
+    margin: 0 0 32px 30px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.contact-form {
+    background-color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 32px;
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    max-height: 480px;
+    padding: 48px 56px;
+
+}
+
+.contact-map {
+    width: 605px;
+    height: 480px;
+    border: 1px solid var(--color-primary-light);
+    border-radius: 32px;
+
+}
+
+.form-field.contacts {
+    margin-bottom: 16px;
+}
