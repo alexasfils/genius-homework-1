@@ -3,29 +3,56 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 30px;
-}
+    padding-top: 16px;
 
-.header-container {
+    @media screen and (min-width: $bp-desktop) {
+            padding-top: 32px;
+        }
+
+&__container {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-
-.header-nav {
+&__nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
     gap: 40px;
 }
-
-.header-menu {
+&__menu {
+display: none;
+ @media screen and (min-width: $bp-desktop) {
     display: flex;
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
+    }
 }
 
-.header-menu-icon {
-    display: flex;
+&__burger {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
 }
+
+&__menu-icon {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+            display: flex;
+        }
+}
+
+}
+
+
+
+

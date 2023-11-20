@@ -2,11 +2,16 @@
 @import './utils/variables';
 @import './base';
 @import './utils/utils';
+@import './utils/texts.scss';
 
 
 @import './components/buttons';
 @import './components/links';
 @import './components/carousel-button';
+@import './components/merits-card';
+@import './components/inputs';
+@import './components/procedures-card';
+@import './components/pagination';
 
 
 @import './layouts/header';
@@ -19,4 +24,5 @@
 @import './layouts/contacts-section';
 @import './layouts/footer';
 @import './layouts/modal';
-@import './layouts/form';
+@import './layouts/form-terms';
+@import './layouts/mobile-menu';
